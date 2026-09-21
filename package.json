@@ -18,6 +18,13 @@
     "typescript": "^7.0.2"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "@langchain/cohere": "^1.1.0",
+    "@langchain/core": "^1.2.12",
+    "@langchain/google": "^0.2.6",
+    "@langchain/langgraph": "^1.4.16",
+    "@langchain/mistralai": "^1.2.0",
+    "express": "^5.2.1",
+    "langchain": "^1.5.11",
+    "zod": "^4.6.5"
   }
 }
