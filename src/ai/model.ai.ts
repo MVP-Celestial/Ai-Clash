@@ -1,16 +1,15 @@
-import { ChatGoogle } from "@langchain/google"
+import { ChatGoogleGenerativeAI } from "@langchain/google-genai"
+import { ChatCohere } from "@langchain/cohere"
 import { ChatMistralAI } from "@langchain/mistralai"
-import {ChatCohere} from "@langchain/cohere"
 import config from "../config/config.js"
 
-
-export const geminiModel = new ChatGoogle({
+export const geminiModel = new ChatGoogleGenerativeAI({
     model: "gemini-flash-latest",
     apiKey: config.GOOGLE_API_KEY,
 })
 
-export const mistralAIModel = new ChatMistralAI({
-    model: "mistral-medium-latest",
+export const geminiSolutionModel = new ChatMistralAI({
+    model: "mistral-large-latest",
     apiKey: config.MISTRAL_API_KEY,
 })
 
