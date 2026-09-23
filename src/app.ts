@@ -5,9 +5,10 @@ const app = express()
 
 app.get('/', async (req, res)=> {
 
-    const result = await runGraph("Write a code for factorial in js.")
+    const result = await runGraph("tell me about ur fav anime .")
 
     res.json(result);
+    console.log(result)
      
    
 })
